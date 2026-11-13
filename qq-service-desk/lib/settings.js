@@ -54,7 +54,6 @@ export function defaultSettings(dshHome, env = process.env) {
     env.QQ_DESK_WORKSPACE,
     dshHome ? path.dirname(dshHome) : '',
     dshHome,
-    process.cwd(),
   ].filter(Boolean))];
 
   let snowLumaDir = env.QQ_DESK_SNOWLUMA_DIR || '';
