@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "QQ service desk",
+    "description": "Supervise SnowLuma and qqbridge inside the client: real console portals, terminal output, automatic authentication and lifecycle management."
+  }
+}

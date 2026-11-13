@@ -1,0 +1,36 @@
+{
+  "name": "@tqyb/qq-service-desk",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "QQ 服务工具台：在 DeepSeek Harness 客户端内顺序启动/停止 SnowLuma 与 qqbridge，内置真实控制台门户、终端输出与自动认证。",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  }
+}

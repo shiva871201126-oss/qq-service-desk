@@ -1,0 +1,8 @@
+# QQ 服务工具台（@tqyb/qq-service-desk）
+# Host 半边随宿主启动：托管 SnowLuma / qqbridge 进程、内建两个只监听 127.0.0.1 的
+# 受限同源门户（剥离第三方 X-Frame-Options/CSP 并注入各自认证），并提供 /qq-desk/api/*。
+# 浏览器端 client.js 在 main 槽位渲染整页面板，并在 sidebar.panellist 加入口。
+- insert:
+    - id: qq-service-desk
+      name: '@tqyb/qq-service-desk'
+      config: {}
